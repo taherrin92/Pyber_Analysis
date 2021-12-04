@@ -6,4 +6,6 @@
 - For the graph, we made a new dataframe that contained the date, fares, and city type. Using the `groupby` function, we grouped the date and city type and calculated the total fares for each type for every timestamp. We reset the index to convert the date series from a float to timestamp and applied `.resample('W').sum()` to group the dates into weekly increments and total up the fares for each week. Finally, the multiple line graph was shaped using `fig,axs = plt.subplots(figsize = (20,6))` and the data was plotted using `fares_by_week.plot(ax=axs)`.
 
 ## Results
-- 
+- In the financial summary seen here, 
+
+![pybersummarydf](https://github.com/taherrin92/Pyber_Analysis/blob/main/analysis/Pyber_summary_df.png)
